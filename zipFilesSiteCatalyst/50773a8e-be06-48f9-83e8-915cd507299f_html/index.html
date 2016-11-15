@@ -1,0 +1,4380 @@
+<!DOCTYPE html>
+<html class="coral-App server-render-mode wf-adobeclean-i4-active wf-adobeclean-n3-active wf-adobeclean-n4-active wf-adobeclean-n7-active wf-adobecleancondensed-n4-active wf-adobecleancondensed-n7-active wf-active"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+	<title>geo test horizontal bar in vrs 0329 - Analysis Workspace</title>
+
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="spa/dist/css/analytics-ui.css">
+	<link rel="stylesheet" href="spa/libs/css/cloudviz-3.6.0.css">
+	<link rel="stylesheet" href="spa/dist/css/common.css">
+
+	
+	<link rel="stylesheet" href="spa/dist/css/calculated-metric-builder.css">
+	
+	<link rel="stylesheet" href="spa/dist/css/segment-builder.css">
+	
+
+	<link rel="stylesheet" href="spa/dist/css/workspace.css">
+
+	<!--[if lte IE 9]>
+	<script src="https://appservice1.omniture.com/analytics/xdomain.min.js">
+	</script>
+	<script>
+		var slaves = {};
+		slaves[localStorage.anServiceEndpoint] = "/analytics/xdomain.html";
+		xdomain.slaves(slaves);
+	</script>
+	<![endif]-->
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<style type="text/css">.tk-adobe-clean{font-family:"adobe-clean",sans-serif;}.tk-adobe-clean-condensed{font-family:"adobe-clean-condensed",sans-serif;}</style><link rel="stylesheet" href="adobe-clean.css" media="all"><style>
+@page {
+	size: 9in 10.302083333333334in;
+	margin: 0mm;
+	background: #FFF;
+}
+</style></head>
+<body class="coral--light ng-scope" ng-controller="spaCtrl" ng-init="init()" data-locale="en_US" style=""><div class="aw-report-content" style="margin: 0px; padding: 0px 0.25in 0.25in; box-sizing: border-box; width: 9.5in; overflow: hidden;">
+						<div class="alerts-box">
+	<!-- ngRepeat: alert in alerts -->
+</div>
+
+						<!-- ngIf: :: serverRender --><div class="an-print-header ng-isolate-scope" ng-if=":: serverRender" project="view.project">
+	<h1 class="ng-binding">geo test horizontal bar in vrs 0329</h1>
+	<h3 class="ng-binding">Test Mixed Parent RSID - Generated on March 30, 2016</h3>
+	<div class="aph-watermark">
+		<div class="aph-text-powered-by">
+			powered by
+		</div>
+		<div class="aph-text-adobe-analytics">
+			Adobe Analytics
+		</div>
+		<i class="aph-watermark-image">
+		</i>
+	</div>
+</div><!-- end ngIf: :: serverRender -->
+
+						<!-- uiView:  --><div ui-view="" class="ng-scope"><!-- ngIf: view.project && !preventAccess --><div ng-if="view.project &amp;&amp; !preventAccess" class="ng-scope">
+	<div class="grid-stack-outer-offset">
+		<div class="grid-stack grid-stack-12-columns grid-stack-1371 grid-stack-animate" data-gs-animate="yes" ad-grid="" ad-grid-params="view.gridParams" style="height: 2405px;">
+			<!-- ngRepeat: panel in view.project.currentWorkspace.panels track by panel.ngRepeatableId --><div class="grid-stack-item an-panel ng-isolate-scope ui-draggable ui-resizable ui-resizable-autohide" ad-drop-target="chartDropTarget" ad-scope="panel" ng-repeat="panel in view.project.currentWorkspace.panels track by panel.ngRepeatableId" panel="panel" ng-class="{collapsed: panel.collapsed}" data-gs-auto-size="true" data-gs-x="0" data-gs-y="0" data-gs-width="12" data-gs-height="97" style="left: 0%; top: 0px; width: 100%; height: 2405px;">
+	<div class="grid-stack-item-content" style="height: auto;">
+		<div class="an-panel-title-bar grid-stack-item-content-handle ui-draggable-handle" ad-popover-menu="panelContextMenu">
+			<div class="header-outer">
+				<span class="right-content">
+					<div class="an-panel-controls">
+						<span class="grid-stack-not-handle ad-CalendarInput ng-isolate-scope" ad-drop-target="datePickerDropTarget" ad-draggable="{
+								dragStartThreshold: 5,
+								dragProxyOpacity: .7,
+								draggableModel: getDraggableDatePickerModel()
+							}" ad-calendar-input-params="calendar">
+	<!-- ngIf: !scope.edit --><span ng-if="!scope.edit" class="ad-CalendarInput-label" ng-click="showCalendar()">
+		<div class="ad-CalendarInput-label--preset ng-binding" data-title=""></div>
+		<div class="ad-CalendarInput-label--date ng-binding">Mar 1 2016<!-- ngIf: scope.params.isRange --><span ng-if="scope.params.isRange" class="ng-binding ng-scope"> - Mar 31 2016</span><!-- end ngIf: scope.params.isRange --></div>
+	</span><!-- end ngIf: !scope.edit -->
+	<!-- ngIf: scope.edit -->
+	<div style="display:none;">
+		<div class="ad-Calendar-popoverModal coral-Popover ng-isolate-scope ad-Calendar--showPresets ad-Calendar--isRange" ng-transclude="" ad-popover-control="calendarPopover" ng-class="{'ad-Calendar--showPresets': scope.params.showPresets, 'ad-Calendar--isRange': scope.params.isRange}">
+			<div class="coral-Dialog-content ng-scope">
+				<!-- ngIf: scope.edit -->
+			</div>
+
+		</div>
+	</div>
+</span>
+						<!-- ngIf: !panel.position.autoSize -->
+						<i ng-class="{'coral-Icon--accordionLeft': panel.collapsed, 'coral-Icon--accordionDown': !panel.collapsed}" class="coral-Icon coral-Icon--sizeXS coral-Icon--panelControl grid-stack-not-handle hide-for-print coral-Icon--accordionDown" ng-click="panel.collapsed = !panel.collapsed;" ad-track="Panel Collapse/Expand" ng-dblclick="panel.parent.updatePanelCollapses(!panel.collapsed);"></i>
+						<i class="hide-for-print coral-Icon coral-Icon--close coral-Icon--sizeXS coral-Icon--panelControl grid-stack-not-handle ng-hide" ng-show="deleteEnabled" data-tooltip="Delete Panel" ad-track="Delete Panel" ng-click="onDeletePanelClick()"></i>
+					</div>
+				</span>
+				<div class="main-content overflow-truncate">
+					<div class="ad-content-editable ng-valid" tabindex="0" ng-model="panel.name" placeholder="Panel" auto-focus="">	<span class="ad-content-editable-label" data-title="">Freeform Panel</span>	<input class="ad-content-editable-input grid-stack-not-handle" style="display:none;"></div>
+				</div>
+			</div>
+			<div class="an-panel-description grid-stack-not-handle ad-content-editable-block ng-isolate-scope ng-hide" ng-click="edit()" ng-hide="panel.collapsed || (!descriptionParams.focused &amp;&amp; !descriptionParams.value)" ad-content-editable-block-params="descriptionParams">
+	<div class="ad-content-editable-block-label">Description</div>
+	<textarea class="ad-content-editable-block-textarea"></textarea>
+	<div class="ad-content-editable-block-controls">
+		<i class="coral-Icon coral-Icon--sizeS coral-Icon--checkCircle" ng-click="save($event)" data-tooltip="Submit"></i>
+		<i class="coral-Icon coral-Icon--sizeS coral-Icon--closeCircle" ng-click="clear($event);" data-tooltip="Clear"></i>
+	</div>
+</div>
+		</div>
+
+		<div class="an-panel-contents" ng-hide="panel.collapsed" ng-class="{'no-segments': panel.segmentIds.length === 0}">
+
+			<div class="ad-Pills js-panel-segments an-global-segments" ad-drop-target="panelSegmentsDropTarget">
+				<!-- ngRepeat: item in panel.segmentIds --><div class="ad-Pill ng-scope" ng-repeat="item in panel.segmentIds" ad-draggable="{
+						dragStartThreshold: 5,
+						dragProxyOpacity: .7,
+						draggableModel: getDraggableModel(item)
+					}">
+					<div class="ad-Pill-content ad-Pill--draggable has-right-icon2 js-segment-pill" ad-drop-target="replaceSegmentDropTarget">
+						<i class="an-global-segment-border"></i>
+						<i class="ad-Icon ad-Icon--dragHandle"></i>
+						<div class="item-label ng-binding" data-title="">Shopping Page</div>
+						<i class="coral-Icon coral-Icon--infoCircle coral-Icon--sizeXS icon-right2" ng-click="scope.previewSegment(item,$event);" data-point-from="right"></i>
+						<i class="hide-for-print coral-Icon coral-Icon--close coral-Icon--sizeXS icon-right" ng-click="scope.removeSegment(item);"></i>
+					</div>
+				</div><!-- end ngRepeat: item in panel.segmentIds --><div class="ad-Pill hide-for-print">
+					<div class="ad-Pill-content ad-Pill--draggablePlaceHolder add-segment-pill-button" ng-class="{'add-segment-pill-button':canCreateSegments}" ng-click="canCreateSegments &amp;&amp; showSegmentBuilder()">
+						<div class="item-label ng-binding" data-title="">
+							Add New Segment
+							<i class="coral-Icon coral-Icon--add coral-Icon--sizeXS add-segment-icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="an-global-segments-divider"></div>
+
+			<div class="grid-stack grid-stack-12-columns grid-stack-6025 grid-stack-nested grid-stack-animate" data-gs-animate="yes" ad-grid="" ad-grid-params="scope.gridParams" style="height: 2230px;">
+				<!-- ngRepeat: subPanel in panel.visibleSubPanels track by subPanel.ngRepeatableId --><div class="js-panel-sub-panel grid-stack-item an-sub-panel an-sub-panel--pivotTableSubPanel js-an-sub-panel js-an-sub-panel ui-draggable ui-resizable ui-resizable-autohide" ad-scope="subPanel" ng-class="{ show: chartSettingsParams.popoverCtrl.isOpen, collapsed: subPanel.collapsed }" ng-show="subPanel.visible" ng-repeat="subPanel in panel.visibleSubPanels track by subPanel.ngRepeatableId" sub-panel="subPanel" data-gs-auto-size="true" data-gs-x="0" data-gs-y="14" data-gs-width="12" data-gs-height="76" style="left: 0%; top: 350px; width: 100%; height: 1880px;">
+	<div class="grid-stack-item-content" sub-panel-id="C1A1C23D-2CF4-BA2F-3694-FAEAE02193DA" style="height: auto;">
+		<div class="sub-panel-header grid-stack-item-content-handle ui-draggable-handle">
+			<div ad-popover-menu="subPanelContextMenu" class="header-outer">
+				<span class="left-content">
+					<!-- ngIf: subPanel.linkedSourceId -->
+					<!-- ngIf: !subPanel.linkedSourceId --><i ng-if="!subPanel.linkedSourceId" ng-style="{ color: subPanel.swatchColor }" data-tooltip="Any visualization with this color is linked to this data source." class="coral-Icon coral-Icon--circle swatch-icon grid-stack-not-handle ng-scope" style="color: rgb(140, 195, 80);">
+					</i><!-- end ngIf: !subPanel.linkedSourceId -->
+				</span>
+				<span class="right-content" ng-class="{ show: subPanel.hasActivePopover }">
+					<div class="sub-panel-controls js-sub-panel-controls">
+						<!-- ngIf: !subPanel.position.autoSize -->
+						<i ng-class="{'coral-Icon--accordionLeft': subPanel.collapsed, 'coral-Icon--accordionDown': !subPanel.collapsed}" class="coral-Icon coral-Icon--sizeXS coral-Icon--panelControl grid-stack-not-handle hide-for-print coral-Icon--accordionDown" ng-click="subPanel.collapsed = !subPanel.collapsed;" ng-dblclick="subPanel.parent.updateSubPanelCollapses(!subPanel.collapsed);" ad-track="SubPanel Collapse/Expand"></i>
+						<i class="coral-Icon coral-Icon--sizeXS coral-Icon--close coral-Icon--panelControl delete-chart grid-stack-not-handle" ng-show="deleteEnabled" ng-click="onDeleteSubPanelClick($event)" data-tooltip="Delete Visualization"></i>
+					</div>
+				</span>
+				<div class="main-content overflow-truncate">
+					<div class="an-sub-panel-title ad-content-editable ng-valid" tabindex="0" ng-model="subPanel.name" placeholder="Freeform Table" auto-focus="">	<span class="ad-content-editable-label" data-title="">Freeform Table</span>	<input class="ad-content-editable-input grid-stack-not-handle" style="display:none;"></div>
+				</div>
+			</div>
+			<div class="an-sub-panel-description grid-stack-not-handle ad-content-editable-block ng-isolate-scope ng-hide" ng-click="edit()" ng-hide="subPanel.collapsed || (!descriptionParams.focused &amp;&amp; !descriptionParams.value)" ad-content-editable-block-params="descriptionParams">
+	<div class="ad-content-editable-block-label">Description</div>
+	<textarea class="ad-content-editable-block-textarea"></textarea>
+	<div class="ad-content-editable-block-controls">
+		<i class="coral-Icon coral-Icon--sizeS coral-Icon--checkCircle" ng-click="save($event)" data-tooltip="Submit"></i>
+		<i class="coral-Icon coral-Icon--sizeS coral-Icon--closeCircle" ng-click="clear($event);" data-tooltip="Clear"></i>
+	</div>
+</div>
+		</div>
+		<!-- ngInclude: subPanel.type --><div class="an-subpanel-contents ng-scope" ng-include="subPanel.type" ng-hide="subPanel.collapsed" tabindex="0"><div class="an-pivot-table-sub-panel ng-scope ng-isolate-scope" tabindex="0" ad-popover-menu="rowContextMenu" sub-panel="subPanel"><div class="pivot-table-head-content js-sticky-header-container">
+	<div class="pivot-table-header js-sticky-header" data-template-id="202">
+	<table class="table-builder-column-tree js-pivot-table-column-tree is-single-row " style="">
+
+		<colgroup class="js-tree-colgroup">
+			
+				<col class="col-0" data-col-id="0" style="width: 50%;">
+			
+				<col class="col-1" data-col-id="1">
+			<!-- End each tr loop -->
+		</colgroup>
+
+		<!-- Default State (No columns) -->
+		<!-- END IF -->
+
+		<!-- Column Headers -->
+		
+		<tbody><tr class="table-builder-column-row">
+			<!-- Create the pivot cell in the first row -->
+			
+			<td class="pivot-cell js-pivot-cell" style="" colspan="1" rowspan="100"></td>
+			
+
+			
+				<td colspan="1" rowspan="1" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1" cell-id="62C28B81-C179-BDFA-25E4-B1869244AF4F" class="column-header js-column-header js-selectable js-selectable-drag-start cell_62C28B81-C179-BDFA-25E4-B1869244AF4F is-leaf-node metric ">
+					<div class="column-header-wrap">
+						<div class="column-header-container js-show-truncated-content">
+							<div class="column-header-label">
+								Occurrences
+							</div>
+							<div class="column-header-actions js-not-selectable">
+								
+								<i class="coral-Icon coral-Icon--infoCircle coral-Icon--sizeXS js-column-info js-not-selectable" data-point-from="right"></i>
+								
+								
+								<i class="coral-Icon coral-Icon--gear column-header-settings-button coral-Icon--sizeXS js-not-selectable js-column-settings"></i>
+								
+								<i class="coral-Icon coral-Icon--close coral-Icon--sizeXS column-header-delete-button js-not-selectable" onclick="$(this).getTemplateObject().remove(false)" data-template-obj="203"></i>
+							</div>
+						</div>
+					</div>
+				</td>
+			<!-- End each td loop -->
+
+		</tr>
+		<!-- End each tr loop -->
+	</tbody></table>
+	<div class="an-backdrop js-header-draggable-backdrop"></div>
+</div>
+
+</div>
+<div class="pivot-table-contents js-pivot-table-contents">
+	<div data-template-id="204">
+<div class="rc-handle-container" style="width: 790px;"><div class="rc-handle" style="left: 394px; height: 1802px; top: -50px;"></div></div><table class="pivot-table-data js-pivot-table-drop-target js-pivot-table-content-table">
+
+<colgroup>
+	
+		<col class="col-0" data-col-id="0" style="width: 50%;">
+	
+		<col class="col-1" data-col-id="1">
+	<!-- End each tr loop -->
+</colgroup>
+
+<!-- Default State when no data has been loaded yet -->
+<!-- END IF -->
+
+<!-- Table Data -->
+
+
+<tbody><tr class="pivot-table-row breakdown-level-0 pivot-table-row-summary " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="205">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="287CDA31-3E24-AABD-81D4-02647A760E38">
+		<div class="pivot-table-cell-container cell_287CDA31-3E24-AABD-81D4-02647A760E38 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			
+				<!-- Delete button is created for the first cell in a summary row -->
+				
+
+					<div class="pivot-table-title-cell-container js-show-truncated-content">
+						<div class="pivot-table-title-cell-label-container">
+							<!-- label cell label -->
+							<div class="pivot-table-cell-label" data-title="">
+								<span class="pivot-table-cell-name">Browser</span>
+
+								<!-- END IF -->
+
+								
+									<div class="pivot-table-search " onclick="$(this).getTemplateObject().showSearchModal(this);" data-template-obj="207" ad-search-popover="" ad-search-popover-params="row.searchParams" data-template-id="206">
+
+	<i class="coral-Icon coral-Icon--filter coral-Icon--sizeXS"></i>
+	 <!-- end if-->
+
+	 <!-- end if-->
+</div>
+
+								<!-- END IF -->
+
+							</div>
+
+							<!-- Optional description field -->
+							
+								<div class="pivot-table-cell-description overflow-truncate">
+									
+										<div class="ad-Pagination js-not-selectable ng-isolate-scope" ad-pagination-params="row.parent.pagination" data-template-onload="208">
+	<span class="ad-Pagination-pageGroup ng-binding">
+		Page:
+		<i class="coral-Icon coral-Icon--chevronLeft coral-Icon--sizeXS ad-Pagination-decreasePage" ad-visible="scope.params.currentPage > 0" ng-click="scope.params.currentPage = scope.params.currentPage - 1; scope.params.triggerChange();" style="visibility: hidden;">
+		</i><!-- ngIf: scope.params.totalPages == 1 --><!-- ngIf: scope.params.totalPages > 1 --><span ng-if="scope.params.totalPages > 1" ad-popover-menu="scope.pageMenu" class="coral-Link ad-Pagination-page ng-binding ng-scope">1</span><!-- end ngIf: scope.params.totalPages > 1 -->/ 4<i class="coral-Icon coral-Icon--chevronRight coral-Icon--sizeXS ad-Pagination-increasePage" ad-visible="scope.params.currentPage < scope.params.totalPages - 1" ng-click="scope.params.currentPage = scope.params.currentPage + 1;  scope.params.triggerChange();" style="visibility: visible;">
+		</i>
+	</span>
+
+	<span class="ad-Pagination-pageSizeGroup ng-binding">
+		Rows:<span ad-popover-menu="scope.rowsMenu" class="coral-Link ad-Pagination-pageSize ng-binding">50</span>
+	</span>
+</div>
+									<!-- END IF -->
+									<span class="pivot-table-cell-description-label">1-50 of 157</span>
+								</div>
+							<!-- END IF -->
+						</div>
+
+						<div class="pivot-table-title-cell-actions js-not-selectable">
+							<i class="js-not-selectable  coral-Icon coral-Icon--sizeXS pivot-cell-collapse-button coral-Icon--accordionDown " onclick="$(this).getTemplateObject()(event, $(this));" data-template-obj="209" ad-track="Breakdown Collapse/Expand"></i>
+							<i class="js-not-selectable coral-Icon coral-Icon--close coral-Icon--sizeXS pivot-cell-delete-button" onclick="$(this).getTemplateObject()();" data-template-obj="210"></i>
+						</div>
+					</div>
+
+				<!-- END IF -->
+
+				<!-- Data Cell label/sort logic -->
+				<!-- END IF -->
+
+				<!-- Spark line container -->
+				<div class="pivot-table-spark-line-container">
+					<div data-template-onload="211" data-template-obj="212"></div>
+				</div>
+
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="AE4CFBA4-49D6-F1D9-933F-4F85AE8698E0" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_AE4CFBA4-49D6-F1D9-933F-4F85AE8698E0 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			
+				<!-- Delete button is created for the first cell in a summary row -->
+				<!-- END IF -->
+
+				<!-- Data Cell label/sort logic -->
+				
+					<div class="pivot-table-cell-data-label" data-title="">
+						<i data-template-id="213" onclick="$(this).getTemplateObject().onclick();" data-template-obj="214" class="ad-Sort coral-Icon js-not-selectable ad-Sort--arrowOnRight coral-Icon--arrowDown "></i>
+
+						<span class="js-cell-number">130,528</span>
+					</div>
+				<!-- END IF -->
+
+				<!-- Spark line container -->
+				<div class="pivot-table-spark-line-container">
+					<div data-template-onload="215" data-template-obj="216"><div class="dv-chart-container" style="width: 316px; height: 30px;"><svg style="height: 100%; width: 100%;"><g class="group"><g class="panels"><g class="panel"><rect class="plot-bg" x="2" y="2" width="312" height="16"></rect></g></g><g class="interaction-group" transform="translate(0,0)"><rect class="interaction-canvas background" visibility="hidden" width="312" height="16" x="2" y="2"></rect></g><g class="behavior-under-geom" transform="translate(0, 0)"></g><g class="plot"><g class="geom" transform="translate(0,0)"><g class="series" transform="translate(0,0)"><path class="datum-0 series-0 line-geom" style="opacity: 0.5; fill: none;" d="M2,2.7714162720619893L12.4,2.509685751183813L22.8,2.003443822643133L33.2,2.599225139905295L43.6,2.182522600086095L54,2.4511407662505373L64.4,2.643994834266035L74.8,2L85.2,2.5888936719758924L95.6,2.378820490744726L106,2.743865690916918L116.39999999999999,2.5027981058975453L126.80000000000001,3.4636246233318975L137.20000000000002,2.8575118381403364L147.6,3.015927679724493L158,2.6164442531209637L168.4,2.9470512268618165L178.79999999999998,2.9814894532931557L189.2,2.7232027550581144L199.6,2.699095996556178L210,2.9367197589324157L220.39999999999998,6.580284115368059L230.79999999999998,3.253551442100731L241.2,2.6681015927679717L251.60000000000002,13.009900990099009L262,2.8437365475678007L272.40000000000003,2.427034007748601L282.8,2.6302195436934994L293.2,2.73697804563065L303.6,2.609556607834696L314,14.108480413258718"></path></g></g><g class="geom" transform="translate(0,0)"><g class="series" transform="translate(0,0)"><text class="datum-0 series-0 text-geom ad-spark-line-label" style="stroke: none; opacity: 0.5;" text-anchor="start" x="2" y="29">Mar 1 </text></g></g><g class="geom" transform="translate(0,0)"><g class="series" transform="translate(0,0)"><text class="datum-0 series-0 text-geom ad-spark-line-label" style="stroke: none; opacity: 0.5;" text-anchor="end" x="314" y="29">Mar 31 </text></g></g></g><g class="behavior" transform="translate(0,0)"></g><g class="legends"></g></g></svg><div class="axes-labels"><div class="panel-labels panel-0"></div></div></div></div>
+				</div>
+
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="217">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="1B23803F-D416-DF26-7E67-6C5E55DD60FE">
+		<div class="pivot-table-cell-container cell_1B23803F-D416-DF26-7E67-6C5E55DD60FE ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">1.</span>
+						<span class="pivot-table-cell-name">Microsoft Internet Explorer 8</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="C2B5471E-9F1D-4E4B-93F8-8D5E1B6F1E8C" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_C2B5471E-9F1D-4E4B-93F8-8D5E1B6F1E8C ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 16.41027212552096%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">21,420</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">16.4%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="218">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="D4F29DCD-C325-B4F9-F30A-B889F81A38E1">
+		<div class="pivot-table-cell-container cell_D4F29DCD-C325-B4F9-F30A-B889F81A38E1 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">2.</span>
+						<span class="pivot-table-cell-name">Microsoft Internet Explorer 10</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="FAC04198-DB2D-68DD-0E8C-ABC74BB26D54" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_FAC04198-DB2D-68DD-0E8C-ABC74BB26D54 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 14.775373866143662%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">19,286</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">14.8%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="219">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="9B20B2CF-1F81-1485-0A1C-AD76C1560FFA">
+		<div class="pivot-table-cell-container cell_9B20B2CF-1F81-1485-0A1C-AD76C1560FFA ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">3.</span>
+						<span class="pivot-table-cell-name">Google Chrome 29.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="661A509D-7461-B943-4CAE-347CC063A4A2" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_661A509D-7461-B943-4CAE-347CC063A4A2 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 13.200999019367494%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">17,231</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">13.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="220">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="7730001A-BB5F-7BF8-E016-7C1745DA9897">
+		<div class="pivot-table-cell-container cell_7730001A-BB5F-7BF8-E016-7C1745DA9897 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">4.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 23.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="5DEE1614-3F3B-6151-3101-F99823850A26" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_5DEE1614-3F3B-6151-3101-F99823850A26 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 11.65880117675901%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">15,218</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">11.7%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="221">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="7E700F0C-EA22-8238-BC24-A723CB80F031">
+		<div class="pivot-table-cell-container cell_7E700F0C-EA22-8238-BC24-A723CB80F031 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">5.</span>
+						<span class="pivot-table-cell-name">Microsoft Internet Explorer 9</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="DCCEF6F4-8D5B-E573-C670-11BDB48C00EB" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_DCCEF6F4-8D5B-E573-C670-11BDB48C00EB ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 7.157085069870066%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">9,342</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">7.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="222">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="ECE71D5E-6272-F914-87E8-93DE2816B64D">
+		<div class="pivot-table-cell-container cell_ECE71D5E-6272-F914-87E8-93DE2816B64D ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">6.</span>
+						<span class="pivot-table-cell-name">Adobe AIR (Unknown Version)</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="BCBFEED0-58A2-E933-9C32-EF682194C72A" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_BCBFEED0-58A2-E933-9C32-EF682194C72A ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 4.327807060554057%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">5,649</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">4.3%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="223">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="60226BBE-5941-9A8D-A77E-D9E748101625">
+		<div class="pivot-table-cell-container cell_60226BBE-5941-9A8D-A77E-D9E748101625 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">7.</span>
+						<span class="pivot-table-cell-name">Microsoft Internet Explorer 6.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="C01E972D-DD34-1745-B4AA-962462755CF0" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_C01E972D-DD34-1745-B4AA-962462755CF0 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 3.4145930375091935%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">4,457</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">3.4%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="224">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="D2D5CE23-19EA-E0FA-785F-E25574AF87D9">
+		<div class="pivot-table-cell-container cell_D2D5CE23-19EA-E0FA-785F-E25574AF87D9 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">8.</span>
+						<span class="pivot-table-cell-name">Android Browser 4.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="3D3A4ADD-8024-69E6-0A72-A4D4408DB7DA" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_3D3A4ADD-8024-69E6-0A72-A4D4408DB7DA ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 2.9602843834273105%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">3,864</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">3.0%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="225">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="DB4F9A1D-8720-283B-BFE2-FB0470D0F0D0">
+		<div class="pivot-table-cell-container cell_DB4F9A1D-8720-283B-BFE2-FB0470D0F0D0 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">9.</span>
+						<span class="pivot-table-cell-name">Google Chrome 28.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="2B922F55-5792-572A-833C-A92F190AAC20" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_2B922F55-5792-572A-833C-A92F190AAC20 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 2.2592853640598185%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">2,949</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">2.3%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="226">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="227867C0-2240-2B39-B60A-7B076F4E5CC4">
+		<div class="pivot-table-cell-container cell_227867C0-2240-2B39-B60A-7B076F4E5CC4 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">10.</span>
+						<span class="pivot-table-cell-name">Mobile Safari 6.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="048B17C2-93F5-FF33-594D-21FF5C3301A5" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_048B17C2-93F5-FF33-594D-21FF5C3301A5 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 1.9122333905368962%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">2,496</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">1.9%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="227">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="1CA871D7-157E-07DD-602A-430A7B84B84B">
+		<div class="pivot-table-cell-container cell_1CA871D7-157E-07DD-602A-430A7B84B84B ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">11.</span>
+						<span class="pivot-table-cell-name">Safari 6.0.5</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="1F17183C-4821-02D5-F332-FE57BD08862A" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_1F17183C-4821-02D5-F332-FE57BD08862A ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 1.9015077224810002%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">2,482</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">1.9%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="228">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="3F17F5CF-CE2E-A4B9-4EC4-D0B8BA4FCF67">
+		<div class="pivot-table-cell-container cell_3F17F5CF-CE2E-A4B9-4EC4-D0B8BA4FCF67 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">12.</span>
+						<span class="pivot-table-cell-name">Microsoft Internet Explorer 7.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="9DA092B0-37F3-0405-48F4-B5675A0C2357" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_9DA092B0-37F3-0405-48F4-B5675A0C2357 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 1.7038489825937728%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">2,224</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">1.7%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="229">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="777EC502-A87B-C434-6100-148E885442C1">
+		<div class="pivot-table-cell-container cell_777EC502-A87B-C434-6100-148E885442C1 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">13.</span>
+						<span class="pivot-table-cell-name">Opera 12</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="75091347-3416-ABC9-CE46-8D4202BBEA76" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_75091347-3416-ABC9-CE46-8D4202BBEA76 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 1.2380485413091444%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">1,616</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">1.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="230">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="786E1A93-9FE1-2C35-A6A8-3CE115B77DE2">
+		<div class="pivot-table-cell-container cell_786E1A93-9FE1-2C35-A6A8-3CE115B77DE2 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">14.</span>
+						<span class="pivot-table-cell-name">Google Chrome 21.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="08693D6D-BC36-4F1D-2919-3A516A4BFDCF" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_08693D6D-BC36-4F1D-2919-3A516A4BFDCF ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.7569257170875214%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">988</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.8%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="231">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="4158DDE3-3761-760A-C620-EC2D6761E6AF">
+		<div class="pivot-table-cell-container cell_4158DDE3-3761-760A-C620-EC2D6761E6AF ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">15.</span>
+						<span class="pivot-table-cell-name">Chrome Mobile 29.0.1547</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="03D6502E-1D05-934F-6CCE-EEB172BDE39F" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_03D6502E-1D05-934F-6CCE-EEB172BDE39F ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.6764832066683011%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">883</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.7%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="232">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="8D9CA13D-7D4C-E0E1-075A-BFF0EE72A0A6">
+		<div class="pivot-table-cell-container cell_8D9CA13D-7D4C-E0E1-075A-BFF0EE72A0A6 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">16.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 24.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="131C4908-A885-1217-02EE-3E9A58B74366" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_131C4908-A885-1217-02EE-3E9A58B74366 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.6450723216474625%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">842</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.6%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="233">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="A8544F3C-2AB6-A32F-99D9-5FB60878D80D">
+		<div class="pivot-table-cell-container cell_A8544F3C-2AB6-A32F-99D9-5FB60878D80D ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">17.</span>
+						<span class="pivot-table-cell-name">Safari 5.1.9</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="408DF885-EA9D-91EC-FE65-71720E749D44" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_408DF885-EA9D-91EC-FE65-71720E749D44 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.6282177004167688%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">820</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.6%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="234">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="712524D3-2D7F-8CF5-FE17-EE74AD7521E0">
+		<div class="pivot-table-cell-container cell_712524D3-2D7F-8CF5-FE17-EE74AD7521E0 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">18.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 22.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="6BCCE4D2-D906-666A-6DF2-1FB43B762DA1" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_6BCCE4D2-D906-666A-6DF2-1FB43B762DA1 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.5730571218435891%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">748</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.6%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="235">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="B6BA4B66-545A-321E-7E6B-2A57F52AC131">
+		<div class="pivot-table-cell-container cell_B6BA4B66-545A-321E-7E6B-2A57F52AC131 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">19.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 21.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="BAAE5842-1146-0A13-EC3F-F3F402EE1083" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_BAAE5842-1146-0A13-EC3F-F3F402EE1083 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.5607992154939936%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">732</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.6%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="236">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="865DE06B-DFC2-95CE-5180-3FE0E0A01011">
+		<div class="pivot-table-cell-container cell_865DE06B-DFC2-95CE-5180-3FE0E0A01011 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">20.</span>
+						<span class="pivot-table-cell-name">Safari (unknown version)</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="A924EE75-F99C-D74D-24A8-BD567219DC76" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_A924EE75-F99C-D74D-24A8-BD567219DC76 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.5355172836479529%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">699</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.5%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="237">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="6928413F-E302-90C7-6DE0-6A035786BB5F">
+		<div class="pivot-table-cell-container cell_6928413F-E302-90C7-6DE0-6A035786BB5F ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">21.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 3.6</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="D6AA320C-1266-E5E7-D65A-EAF3FA358239" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_D6AA320C-1266-E5E7-D65A-EAF3FA358239 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.48035670507477324%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">627</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.5%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="238">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="B4DE761B-E60F-F2F5-B950-9B6E15A1DCF2">
+		<div class="pivot-table-cell-container cell_B4DE761B-E60F-F2F5-B950-9B6E15A1DCF2 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">22.</span>
+						<span class="pivot-table-cell-name">Opera 11</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="EEAEBFE8-A5CE-2529-C119-AA5A86C07377" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_EEAEBFE8-A5CE-2529-C119-AA5A86C07377 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.4734616327531258%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">618</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.5%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="239">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="80ED953E-E6AA-620C-9BC2-5C5A4FBF8343">
+		<div class="pivot-table-cell-container cell_80ED953E-E6AA-620C-9BC2-5C5A4FBF8343 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">23.</span>
+						<span class="pivot-table-cell-name">Safari</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="F3CFB069-949C-4911-90FC-C1F20A4D1E4A" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_F3CFB069-949C-4911-90FC-C1F20A4D1E4A ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.42366388820789413%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">553</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.4%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="240">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="CE864086-3E73-33F5-DB9A-E9696FB58AE6">
+		<div class="pivot-table-cell-container cell_CE864086-3E73-33F5-DB9A-E9696FB58AE6 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">24.</span>
+						<span class="pivot-table-cell-name">Chrome Mobile 18.0.1025</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="E1DFBF4B-2187-C6C4-09CA-59AF66AA95BE" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_E1DFBF4B-2187-C6C4-09CA-59AF66AA95BE ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.39684971806815394%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">518</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.4%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="241">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="97EB9D9A-0EF1-E33F-6A48-721B0AE21AE5">
+		<div class="pivot-table-cell-container cell_97EB9D9A-0EF1-E33F-6A48-721B0AE21AE5 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">25.</span>
+						<span class="pivot-table-cell-name">Google Chrome 26.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="93C497C3-55B0-E45D-1D04-13146AD6D9FA" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_93C497C3-55B0-E45D-1D04-13146AD6D9FA ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.3822934542780093%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">499</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.4%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="242">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="57047589-8AE2-77F7-EDCD-CB7B0F5C2387">
+		<div class="pivot-table-cell-container cell_57047589-8AE2-77F7-EDCD-CB7B0F5C2387 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">26.</span>
+						<span class="pivot-table-cell-name">Internet Explorer Mobile 7.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="1C3C41E9-0DAA-C563-C70F-08DAE98E0AB6" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_1C3C41E9-0DAA-C563-C70F-08DAE98E0AB6 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.366971071341015%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">479</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.4%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="243">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="AC7AD5D9-DF72-67F5-C44E-E27A793F0787">
+		<div class="pivot-table-cell-container cell_AC7AD5D9-DF72-67F5-C44E-E27A793F0787 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">27.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 20.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="FD705BA9-CFD2-2CB7-4CD4-92E5D332EC1D" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_FD705BA9-CFD2-2CB7-4CD4-92E5D332EC1D ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.3646727139004658%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">476</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.4%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="244">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="863CBC32-D4D5-244A-3DBA-585F058BCEA0">
+		<div class="pivot-table-cell-container cell_863CBC32-D4D5-244A-3DBA-585F058BCEA0 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">28.</span>
+						<span class="pivot-table-cell-name">Google Chrome 11.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="27137740-3DE5-5921-6631-701258DB7311" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_27137740-3DE5-5921-6631-701258DB7311 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.3608421181662172%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">471</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.4%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="245">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="A97CCDC6-7A3E-B5A6-6AD7-95BCE321A3D2">
+		<div class="pivot-table-cell-container cell_A97CCDC6-7A3E-B5A6-6AD7-95BCE321A3D2 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">29.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 19.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="B5CCFC23-D7B0-6C0E-4D2F-44206CED196F" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_B5CCFC23-D7B0-6C0E-4D2F-44206CED196F ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.35318092669772%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">461</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.4%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="246">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="8AEF9DA9-EA9E-93A0-01C7-9134546AF4D2">
+		<div class="pivot-table-cell-container cell_8AEF9DA9-EA9E-93A0-01C7-9134546AF4D2 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">30.</span>
+						<span class="pivot-table-cell-name">Adobe AIR 1.5</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="5B4F7DBE-CED1-62F5-9886-E2DFBA9781A4" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_5B4F7DBE-CED1-62F5-9886-E2DFBA9781A4 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.33785854376072566%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">441</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.3%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="247">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="44F40971-DC11-B1C7-4739-F0F906603081">
+		<div class="pivot-table-cell-container cell_44F40971-DC11-B1C7-4739-F0F906603081 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">31.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 11.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="668C877B-72EE-E61E-B6F0-5B52E975D962" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_668C877B-72EE-E61E-B6F0-5B52E975D962 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.317939445942633%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">415</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.3%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="248">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="A51099D4-95FC-CAE6-BDB5-53F792ECBC1A">
+		<div class="pivot-table-cell-container cell_A51099D4-95FC-CAE6-BDB5-53F792ECBC1A ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">32.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 4.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="76CEBB42-11C3-A2C9-0B3F-BBEEE5655C56" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_76CEBB42-11C3-A2C9-0B3F-BBEEE5655C56 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.3095121353272861%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">404</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.3%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="249">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="A1F073A8-C4CD-A0B4-17DC-887FC18A42E8">
+		<div class="pivot-table-cell-container cell_A1F073A8-C4CD-A0B4-17DC-887FC18A42E8 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">33.</span>
+						<span class="pivot-table-cell-name">Safari 5.0.6</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="2DE3F6DA-49AC-846B-90E9-8ED53C6CCBD0" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_2DE3F6DA-49AC-846B-90E9-8ED53C6CCBD0 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.2972542289776906%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">388</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.3%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="250">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="7C8DC07C-057A-1F62-5935-4CDA57077BE4">
+		<div class="pivot-table-cell-container cell_7C8DC07C-057A-1F62-5935-4CDA57077BE4 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">34.</span>
+						<span class="pivot-table-cell-name">Yandex.Browser</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="6F653303-D43F-A965-4643-6CF7BE5329E1" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_6F653303-D43F-A965-4643-6CF7BE5329E1 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.2911252758028929%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">380</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.3%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="251">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="5D8C5F71-E60C-5BFC-00FF-FCA8E09531E1">
+		<div class="pivot-table-cell-container cell_5D8C5F71-E60C-5BFC-00FF-FCA8E09531E1 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">35.</span>
+						<span class="pivot-table-cell-name">Google Chrome 27.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="F8132959-5D13-F1DF-B301-FB5564CC7185" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_F8132959-5D13-F1DF-B301-FB5564CC7185 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.27044005883795047%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">353</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.3%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="252">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="5C6F2F26-1578-BA4E-6693-74BF56D5CB38">
+		<div class="pivot-table-cell-container cell_5C6F2F26-1578-BA4E-6693-74BF56D5CB38 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">36.</span>
+						<span class="pivot-table-cell-name">Google Chrome 18.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="BF4FA4B2-D124-E284-F099-49B57C8B2A5F" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_BF4FA4B2-D124-E284-F099-49B57C8B2A5F ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.2597143907820544%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">339</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.3%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="253">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="95DB197A-76B1-C208-624B-01DB5DDEEBCF">
+		<div class="pivot-table-cell-container cell_95DB197A-76B1-C208-624B-01DB5DDEEBCF ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">37.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 15.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="3A498D10-1032-9C9E-F811-04F63CA92CA6" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_3A498D10-1032-9C9E-F811-04F63CA92CA6 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.25588379504780584%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">334</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.3%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="254">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="A08F016F-EAEE-D40E-DDF6-BD20C0F9E322">
+		<div class="pivot-table-cell-container cell_A08F016F-EAEE-D40E-DDF6-BD20C0F9E322 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">38.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 16.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="AD7572A0-66C7-AAD1-53AB-4942AE9B9317" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_AD7572A0-66C7-AAD1-53AB-4942AE9B9317 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.24975484187300812%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">326</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="255">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="8E209798-1ADD-0515-027F-C588C693D482">
+		<div class="pivot-table-cell-container cell_8E209798-1ADD-0515-027F-C588C693D482 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">39.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 17.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="732D2997-1A60-0913-81ED-F75F4045860A" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_732D2997-1A60-0913-81ED-F75F4045860A ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.2466903652856092%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">322</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="256">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="C20FB18A-A413-4822-BA85-5F5CB0086CE3">
+		<div class="pivot-table-cell-container cell_C20FB18A-A413-4822-BA85-5F5CB0086CE3 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">40.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 12.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="7E41B2BC-8E40-EC39-170A-00CACEB85019" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_7E41B2BC-8E40-EC39-170A-00CACEB85019 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.23136798234861486%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">302</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="257">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="2942AC45-5FD3-13D2-A1D9-A0C01CE4FDEC">
+		<div class="pivot-table-cell-container cell_2942AC45-5FD3-13D2-A1D9-A0C01CE4FDEC ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">41.</span>
+						<span class="pivot-table-cell-name">Safari 6.0.3</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="25F046B5-2AFB-078F-1F79-382D3A3BCE7E" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_25F046B5-2AFB-078F-1F79-382D3A3BCE7E ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.22753738661436626%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">297</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="258">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="43DA0453-8E7E-A7FD-DDCD-555BCD52ADF7">
+		<div class="pivot-table-cell-container cell_43DA0453-8E7E-A7FD-DDCD-555BCD52ADF7 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">42.</span>
+						<span class="pivot-table-cell-name">Adobe AIR 2.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="97AF1B58-7AA0-54FB-9DEE-61030F584A44" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_97AF1B58-7AA0-54FB-9DEE-61030F584A44 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.21527948026477078%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">281</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="259">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="A3896A97-8D49-03CC-E928-C763B46FFAFD">
+		<div class="pivot-table-cell-container cell_A3896A97-8D49-03CC-E928-C763B46FFAFD ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">43.</span>
+						<span class="pivot-table-cell-name">SouGou Browser</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="B8CE75FF-451A-30F6-2BEC-9F60F2E90DAC" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_B8CE75FF-451A-30F6-2BEC-9F60F2E90DAC ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.21068276538367248%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">275</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="260">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="CF3B6C68-324C-5D15-D9DD-18E723BE39DC">
+		<div class="pivot-table-cell-container cell_CF3B6C68-324C-5D15-D9DD-18E723BE39DC ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">44.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 14.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="404323E4-38E0-1821-2216-FEFDF1E0FC33" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_404323E4-38E0-1821-2216-FEFDF1E0FC33 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.20072321647462613%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">262</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="261">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="2B6566F2-D34A-C25F-DAE1-4E302B5E20FC">
+		<div class="pivot-table-cell-container cell_2B6566F2-D34A-C25F-DAE1-4E302B5E20FC ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">45.</span>
+						<span class="pivot-table-cell-name">Google Chrome 25.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="37869AEC-6C22-F8F0-83D8-3590137B56C8" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_37869AEC-6C22-F8F0-83D8-3590137B56C8 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.18463471439078205%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">241</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="262">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="23D75FD8-3B38-5DF5-DB78-B492C97FC9BC">
+		<div class="pivot-table-cell-container cell_23D75FD8-3B38-5DF5-DB78-B492C97FC9BC ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">46.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 10.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="F9BCA718-267D-51E2-8C4E-D7173E25FD4C" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_F9BCA718-267D-51E2-8C4E-D7173E25FD4C ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.1785057612159843%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">233</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="263">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="0B94BF2A-940C-1D44-3645-B3628AA5E613">
+		<div class="pivot-table-cell-container cell_0B94BF2A-940C-1D44-3645-B3628AA5E613 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">47.</span>
+						<span class="pivot-table-cell-name">Mobile Safari 5.1</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="F8C637C4-17AE-B8EC-89B1-445E691B0318" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_F8C637C4-17AE-B8EC-89B1-445E691B0318 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.17084456974748713%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">223</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="264">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="C342FAE5-9AA0-5EBB-8039-DDF2A6BEB298">
+		<div class="pivot-table-cell-container cell_C342FAE5-9AA0-5EBB-8039-DDF2A6BEB298 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">48.</span>
+						<span class="pivot-table-cell-name">Nokia S40 Browser 2.3.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="2B36E421-7138-97EB-0C23-A297D22F375B" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_2B36E421-7138-97EB-0C23-A297D22F375B ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.15015935278254475%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">196</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="265">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="421F5F90-05AA-FCAF-090C-659DCDEEB7BC">
+		<div class="pivot-table-cell-container cell_421F5F90-05AA-FCAF-090C-659DCDEEB7BC ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">49.</span>
+						<span class="pivot-table-cell-name">Mozilla Firefox 13.0</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="1E2350F0-7606-9B56-D354-4D7CD7A4CAB2" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_1E2350F0-7606-9B56-D354-4D7CD7A4CAB2 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.15015935278254475%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">196</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.2%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+
+
+<tr class="pivot-table-row breakdown-level-0 pivot-table-row-data " data-table-id="04FBA5E4-DDB5-314B-15E6-39D49C84CD47" data-template-obj="266">
+	<!-- Optional breakdown cell -->
+	<!-- END IF -->
+
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item pivot-table-cell-dropZone pivot-table-label-cell " colspan="1" cell-id="0882F47D-8009-6E98-44F7-0A75311D54F2">
+		<div class="pivot-table-cell-container cell_0882F47D-8009-6E98-44F7-0A75311D54F2 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: ; display:none;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				
+					<div class="pivot-table-cell-label" data-title="">
+						<span class="pivot-table-row-num">50.</span>
+						<span class="pivot-table-cell-name">Chrome Mobile 28.0.1500</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	
+	<td class="pivot-table-cell js-selectable js-selectable-drag-start js-draggable-item " colspan="1" cell-id="AC299D5A-B958-8E4E-9ACC-754A2683C893" data-column-id="5CE35DE4-8103-1AFA-6AA3-43413D0512C1">
+		<div class="pivot-table-cell-container cell_AC299D5A-B958-8E4E-9ACC-754A2683C893 ">
+
+			<!-- Red/Yellow cell validation dom. Doing show/hide so update can just toggle show hide.-->
+			<div class="tooltip-indicator-container" data-tooltip="" style="display:none;">
+				<div class="tooltip-indicator tooltip-indicator-"></div>
+			</div>
+
+			<!-- SUMMARY ROW CELLS -->
+			<!-- END IF -->
+
+			
+				<!-- DATA ROW CELLS -->
+
+				<!-- Bar chart -->
+				<div class="pivot-table-inline-bar-chart js-cell-bar" style="width: 0.149393233635695%;"></div>
+
+				<!-- Conditional Formatting -->
+				<div class="pivot-table-conditional-formatting js-cell-conditional-formatting" style="display:none;"></div> 
+
+				<!-- label cell label -->
+				<!-- END IF -->
+
+					<!-- Data Cell label/sort logic -->
+					<div class="pivot-table-cell-data-label" data-title="">
+						<span class="js-cell-number">195</span>
+						<span class="pivot-table-cell-percentage-label js-cell-percentage-label">0.1%</span>
+					</div>
+				<!-- END IF -->
+			<!-- END IF -->
+
+
+		</div>
+	</td>
+	<!-- End each td loop -->
+
+	<!-- Empty cell used when there are no cells provided. -->
+	<!-- END IF -->
+</tr>
+<!-- End each tr loop -->
+
+</tbody></table>
+
+
+
+<div class="pivot-table-loading-lightbox" style="display:none;">
+	<div class="coral-Wait coral-Wait--center coral-Wait--large"></div>
+</div>
+</div>
+
+</div>
+</div></div>
+	</div>
+<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: none;"></div></div><!-- end ngRepeat: subPanel in panel.visibleSubPanels track by subPanel.ngRepeatableId --><div class="js-panel-sub-panel grid-stack-item an-sub-panel an-sub-panel--chartSubPanel js-an-sub-panel js-an-sub-panel ui-draggable ui-resizable ui-resizable-autohide" ad-scope="subPanel" ng-class="{ show: chartSettingsParams.popoverCtrl.isOpen, collapsed: subPanel.collapsed }" ng-show="subPanel.visible" ng-repeat="subPanel in panel.visibleSubPanels track by subPanel.ngRepeatableId" sub-panel="subPanel" data-gs-auto-size="true" data-gs-x="0" data-gs-y="0" data-gs-width="12" data-gs-height="14" style="left: 0%; top: 0px; width: 100%; height: 330px;">
+	<div class="grid-stack-item-content" sub-panel-id="BDD9B779-0D44-DCFB-2921-B8B12CD22ABE" style="height: auto;">
+		<div class="sub-panel-header grid-stack-item-content-handle ui-draggable-handle">
+			<div ad-popover-menu="subPanelContextMenu" class="header-outer">
+				<span class="left-content">
+					<!-- ngIf: subPanel.linkedSourceId --><i ng-if="subPanel.linkedSourceId" ng-style="{ color: subPanel.swatchColor }" class="coral-Icon coral-Icon--circle swatch-icon swatch-icon-editable grid-stack-not-handle ng-scope" data-tooltip="Manage Data Source" an-data-source-settings="" style="color: rgb(140, 195, 80);">
+					</i><!-- end ngIf: subPanel.linkedSourceId -->
+					<!-- ngIf: !subPanel.linkedSourceId -->
+				</span>
+				<span class="right-content" ng-class="{ show: subPanel.hasActivePopover }">
+					<div class="sub-panel-controls js-sub-panel-controls"><div an-sub-panel-controls="" class="an-sub-panel-controls">
+		<i class="coral-Icon coral-Icon--gear coral-Icon--sizeXS grid-stack-not-handle" data-tooltip="Visualization Settings" an-chart-settings="" an-chart-settings-params="chartSettingsParams">
+		</i>
+	</div>
+						<!-- ngIf: !subPanel.position.autoSize -->
+						<i ng-class="{'coral-Icon--accordionLeft': subPanel.collapsed, 'coral-Icon--accordionDown': !subPanel.collapsed}" class="coral-Icon coral-Icon--sizeXS coral-Icon--panelControl grid-stack-not-handle hide-for-print coral-Icon--accordionDown" ng-click="subPanel.collapsed = !subPanel.collapsed;" ng-dblclick="subPanel.parent.updateSubPanelCollapses(!subPanel.collapsed);" ad-track="SubPanel Collapse/Expand"></i>
+						<i class="coral-Icon coral-Icon--sizeXS coral-Icon--close coral-Icon--panelControl delete-chart grid-stack-not-handle" ng-show="deleteEnabled" ng-click="onDeleteSubPanelClick($event)" data-tooltip="Delete Visualization"></i>
+					</div>
+				</span>
+				<div class="main-content overflow-truncate">
+					<div class="an-sub-panel-title ad-content-editable ng-valid" tabindex="0" ng-model="subPanel.name" placeholder="Horizontal Bar" auto-focus="">	<span class="ad-content-editable-label" data-title="">Horizontal Bar</span>	<input class="ad-content-editable-input grid-stack-not-handle" style="display:none;"></div>
+				</div>
+			</div>
+			<div class="an-sub-panel-description grid-stack-not-handle ad-content-editable-block ng-isolate-scope ng-hide" ng-click="edit()" ng-hide="subPanel.collapsed || (!descriptionParams.focused &amp;&amp; !descriptionParams.value)" ad-content-editable-block-params="descriptionParams">
+	<div class="ad-content-editable-block-label">Description</div>
+	<textarea class="ad-content-editable-block-textarea"></textarea>
+	<div class="ad-content-editable-block-controls">
+		<i class="coral-Icon coral-Icon--sizeS coral-Icon--checkCircle" ng-click="save($event)" data-tooltip="Submit"></i>
+		<i class="coral-Icon coral-Icon--sizeS coral-Icon--closeCircle" ng-click="clear($event);" data-tooltip="Clear"></i>
+	</div>
+</div>
+		</div>
+		<!-- ngInclude: subPanel.type --><div class="an-subpanel-contents ng-scope" ng-include="subPanel.type" ng-hide="subPanel.collapsed"><div class="chart-sub-panel ng-isolate-scope" ad-loading="linkedSource.loading" sub-panel="subPanel">
+	
+
+	<!-- ngIf: chartLoaded || ignoreLinkedSource --><div class="ad-chart ng-isolate-scope horizontalbar" ng-class="vizFactory.vizType" ng-if="chartLoaded || ignoreLinkedSource" viz-factory="vizFactory"><div class="cv-wrapper interactive" data-chart-type="bar"><div class="cv-bg" style="top: 59px; left: 0px; height: 171px; width: 790px;"></div><div class="dv-chart-container" style="width: 790px; height: 270px;"><svg style="height: 100%; width: 100%;"><defs><clipPath class="cv-clip" id="cv-clip1"><rect x="0" y="60" width="789" height="169"></rect></clipPath></defs><g class="group"><g class="panels"><g class="panel"><rect class="plot-bg" x="53" y="60" width="737" height="169"></rect><g class="axis axis-y axis-index-0" transform="translate(53,0)"><g class="axis-tick" transform="translate(0,229)" style="opacity: 1;"><line class="tick" x2="737" y2="0"></line></g><g class="axis-tick" transform="translate(0,155.7373616113112)" style="opacity: 1;"><line class="tick" x2="737" y2="0"></line></g><g class="axis-tick" transform="translate(0,82.47472322262243)" style="opacity: 1;"><line class="tick" x2="737" y2="0"></line></g><path class="domain" d="M737,60H0V229H737"></path></g><g class="axis axis-x axis-index-0" transform="translate(0,229)"><g class="axis-tick" transform="translate(97.8722344198615,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(147.6611214321905,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(197.4500084445195,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(247.23889545684852,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(297.02778246917745,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(346.8166694815065,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(396.60555649383554,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(446.39444350616446,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(496.1833305184935,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(545.9722175308225,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(595.7611045431515,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(645.5499915554806,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(695.3388785678096,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><g class="axis-tick" transform="translate(745.1277655801385,0)" style="opacity: 1;"><line class="tick" y2="0" x2="0"></line></g><path class="domain" d="M53,0V0H790V0"></path></g></g></g><g class="interaction-group" transform="translate(0,0)"><rect class="interaction-canvas background" visibility="hidden" width="737" height="169" x="53" y="60"></rect></g><g class="behavior-under-geom" transform="translate(0, 0)"></g><g class="plot"><g class="geom" transform="translate(0,0)" clip-path="url(#cv-clip1)"><g class="series" transform="translate(0,0)"><path class="datum-0 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M77.89444350616449,229L117.8500253335585,229L117.8500253335585,72.07142857142861L77.89444350616449,72.07142857142861Z" legend-group="Occurrences"></path><path class="datum-1 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M127.68333051849349,229L167.63891234588752,229L167.63891234588752,87.7056756035748L127.68333051849349,87.7056756035748Z" legend-group="Occurrences"></path><path class="datum-2 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M177.4722175308225,229L217.4277993582165,229L217.4277993582165,102.76114779245034L177.4722175308225,102.76114779245034Z" legend-group="Occurrences"></path><path class="datum-3 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M227.2611045431515,229L267.2166863705455,229L267.2166863705455,117.5089169000934L227.2611045431515,117.5089169000934Z" legend-group="Occurrences"></path><path class="datum-4 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M277.04999155548046,229L317.0055733828745,229L317.0055733828745,160.55804321728692L277.04999155548046,160.55804321728692Z" legend-group="Occurrences"></path><path class="datum-5 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M326.8388785678095,229L366.79446039520354,229L366.79446039520354,187.61393557422969L326.8388785678095,187.61393557422969Z" legend-group="Occurrences"></path><path class="datum-6 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M376.62776558013854,229L416.5833474075326,229L416.5833474075326,196.34684207016141L376.62776558013854,196.34684207016141Z" legend-group="Occurrences"></path><path class="datum-7 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M426.41665259246747,229L466.3722344198615,229L466.3722344198615,200.69131652661065L426.41665259246747,200.69131652661065Z" legend-group="Occurrences"></path><path class="datum-8 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M476.2055396047965,229L516.1611214321905,229L516.1611214321905,207.39484793917566L476.2055396047965,207.39484793917566Z" legend-group="Occurrences"></path><path class="datum-9 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M525.9944266171253,229L565.9500084445194,229L565.9500084445194,210.71364545818327L525.9944266171253,210.71364545818327Z" legend-group="Occurrences"></path><path class="datum-10 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M575.7833136294545,229L615.7388954568485,229L615.7388954568485,210.81621315192743L575.7833136294545,210.81621315192743Z" legend-group="Occurrences"></path><path class="datum-11 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M625.5722006417835,229L665.5277824691775,229L665.5277824691775,212.70638922235563L625.5722006417835,212.70638922235563Z" legend-group="Occurrences"></path><path class="datum-12 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M675.3610876541126,229L715.3166694815066,229L715.3166694815066,217.1607576363879L675.3610876541126,217.1607576363879Z" legend-group="Occurrences"></path><path class="datum-13 series-0 bar-geom" style="fill: rgb(140, 195, 80);" d="M725.1499746664415,229L765.1055564938355,229L765.1055564938355,221.76165132719754L725.1499746664415,221.76165132719754Z" legend-group="Occurrences"></path></g><g class="behavior-layer"></g></g></g><g class="behavior" transform="translate(0,0)"></g><g class="legends"><g class="legend" style="opacity: 0;"></g></g></g></svg><div class="axes-labels"><div class="panel-labels panel-0"><div class="axis-y axis-index-0" style="left: 53px; top: 0px; position: absolute;"><div class="axis-label end" style="opacity: 1; position: absolute; top: 229px; left: -10px;"><span></span></div><div class="axis-label end" style="opacity: 1; position: absolute; top: 148.237px; left: -42px;"><span>10,000</span></div><div class="axis-label end" style="opacity: 1; position: absolute; top: 74.9747px; left: -43px;"><span>20,000</span></div></div><div class="axis-x axis-index-0" style="left: 0px; top: 229px; position: absolute;"><div class="axis-label middle" style="opacity: 1; position: absolute; top: 8px; left: 28.8722px;"><span>Microsoft Internet Explorer 8</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 26px; left: 76.1611px;"><span>Microsoft Internet Explorer 10</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 8px; left: 147.45px;"><span>Google Chrome 29.0</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 26px; left: 200.239px;"><span>Mozilla Firefox 23.0</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 8px; left: 227.528px;"><span>Microsoft Internet Explorer 9</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 26px; left: 272.317px;"><span>Adobe AIR (Unknown Version)</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 8px; left: 323.106px;"><span>Microsoft Internet Explorer 6.0</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 26px; left: 396.894px;"><span>Android Browser 4.0</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 8px; left: 446.183px;"><span>Google Chrome 28.0</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 26px; left: 505.472px;"><span>Mobile Safari 6.0</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 8px; left: 569.761px;"><span>Safari 6.0.5</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 26px; left: 572.55px;"><span>Microsoft Internet Explorer 7.0</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 8px; left: 673.839px;"><span>Opera 12</span></div><div class="axis-label middle" style="opacity: 1; position: absolute; top: 26px; left: 696.128px;"><span>Google Chrome 21.0</span></div></div></div></div></div><div class="cv-legend top" style="top: 0px; left: 0px;"><div class="cv-legend-entry cv-legend-standard-entry" style="width: 790px;"><div class="cv-legend-title" style="height: 16px;">Occurrences</div><div class="cv-legend-details"><div class="cv-legend-marker bar" style="background-color: rgb(140, 195, 80);"></div><div class="cv-legend-num"></div></div></div></div></div></div><!-- end ngIf: chartLoaded || ignoreLinkedSource -->
+
+	<!-- ngIf: dataLoaded && ((!ignoreLinkedSource && !linkedSource.loading && !linkedSource.loaded) || renderError) -->
+<div class="ad-Loading-Container"><div class="ad-Loading-Icon coral-Wait coral-Wait--large coral-Wait--center"></div></div></div></div>
+	</div>
+<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: none;"></div></div><!-- end ngRepeat: subPanel in panel.visibleSubPanels track by subPanel.ngRepeatableId -->
+			<div class="grid-stack-ignore grid-stack-placeholder grid-stack-item" style="display: none;"><div class="placeholder-content grid-stack-item-content"></div></div></div>
+		</div>
+	</div>
+<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90; display: none;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; display: none;"></div></div><!-- end ngRepeat: panel in view.project.currentWorkspace.panels track by panel.ngRepeatableId -->
+		<div class="grid-stack-ignore grid-stack-placeholder grid-stack-item" style="display: none;"><div class="placeholder-content grid-stack-item-content"></div></div></div>
+	</div>
+</div><!-- end ngIf: view.project && !preventAccess --></div>
+						
+					</div>
+
+
+</body></html>

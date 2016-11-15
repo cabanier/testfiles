@@ -1,0 +1,26 @@
+body {
+    font-family: Arial,helvetic,sans-serif;
+}
+
+.sales {
+    border-collapse: collapse;
+    margin: 50px;
+}
+
+.sales thead th {
+    padding-bottom: 8px;
+}
+
+.sales td {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: thin solid black;
+}
+
+@media print {
+  .printable {
+      display: block;
+  }
+}
